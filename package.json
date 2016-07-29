@@ -1,0 +1,15 @@
+{
+  "name": "angular-training",
+  "version": "0.0.1",
+  "description": "EPAM Angular training project",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dglk/angular-project.git"
+  },
+  "dependencies": {
+    "angular": "1.5.8",
+    "bootstrap": "3.3.7",
+    "moment": "2.14.1"
+  }
+}

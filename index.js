@@ -1,4 +1,7 @@
 (function() {
   'use strict';
-  angular.module('TrainingProject', []);
+  angular.module('trainingProject', []);
+  angular.element(document).ready(function() {
+    angular.bootstrap(document, ['trainingProject']);
+  });
 })();

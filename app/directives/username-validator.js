@@ -2,7 +2,7 @@
   'use strict';
   var WORD_REGEX = /^[a-zA-z]+$/;
 
-  angular.module('TrainingProject').directive('usernameValidator', function() {
+  angular.module('trainingProject').directive('usernameValidator', function() {
     return {
       require: 'ngModel',
       link: function($scope, $element, $attrs, $controller) {

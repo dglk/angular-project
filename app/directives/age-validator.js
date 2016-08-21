@@ -4,7 +4,7 @@
       MAX_AGE = 65,
       INTEGER_REGEX = /^[1-9][0-9]*$/;;
 
-  angular.module('TrainingProject').directive('ageValidator', function() {
+  angular.module('trainingProject').directive('ageValidator', function() {
     return {
       require: 'ngModel',
       link: function($scope, $element, $attrs, $controller) {

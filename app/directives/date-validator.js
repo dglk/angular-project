@@ -2,7 +2,7 @@
   'use strict';
   var DATE_FORMAT = 'DD-MM-YYYY';
 
-  angular.module('TrainingProject').directive('dateValidator', function() {
+  angular.module('trainingProject').directive('dateValidator', function() {
     return {
       require: 'ngModel',
       link: function($scope, $element, $attrs, $controller) {

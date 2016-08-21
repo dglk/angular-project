@@ -8,45 +8,10 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   </head>
   <body>
-    <div class="container">
-      <div class="row"><div class="col-xs-12">
-        <form id="user-prefs" novalidate name="form">
-          <h1>User Preferences</h1>
-          <div class="form-group" ng-class="{'has-error': form.username.$dirty && form.username.$invalid,
-          'has-success': form.username.$dirty && form.username.$valid}">
-            <label class="control-label" for="username">Username</label>
-            <input id="username" class="form-control" type="text" ng-model="username" name="username" username-validator>
-            <p class="help-block" ng-show="form.username.$error.firstUppercase">First letter must be capitalized</p>
-            <p class="help-block" ng-show="form.username.$error.short">Username should be at least 3 characters long</p>
-            <p class="help-block" ng-show="form.username.$error.lettersOnly">Username should include only Latin letters</p>
-          </div>
-          <div class="form-group" ng-class="{'has-error': form.age.$dirty && form.age.$invalid,
-          'has-success': form.age.$dirty && form.age.$valid}">
-            <label for="age">Age</label>
-            <input id="age" class="form-control" type="text" ng-model="age" name="age" age-validator>
-            <p class="help-block" ng-show="form.age.$error.integer">Age should be a valid positive integer</p>
-            <p class="help-block" ng-show="form.age.$error.correctRange">Age should be between 18 and 65</p>
-          </div>
-          <div class="form-group" ng-class="{'has-error': form.date.$dirty && form.date.$invalid,
-          'has-success': form.date.$dirty && form.date.$valid}">
-            <label for="date">Date</label>
-            <input id="date" class="form-control" type="text" ng-model="date" name="date" date-validator>
-            <p class="help-block" ng-show="form.date.$error.date">Enter a date in a DD-MM-YYYY format</p>
-          </div>
-          <div class="form-group bg-info" ng-show="form.$valid">
-            <h2>Preview</h2>
-            <p ng-show="username">Username: {{username}}</p>
-            <p ng-show="age">Age: {{age}}</p>
-            <p ng-show="date">Date: {{date}}</p>
-          </div>
-          <div class="form-group">
-            <input class="btn btn-primary" type="submit" value="Submit">
-          </div>
-        </form>
-      </div></div>
-    </div>
+    <div ui-view></div>
     <script src="node_modules/moment/moment.js"></script>
     <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="index.js"></script>
     <script src="app/directives/age-validator.js"></script>
     <script src="app/directives/username-validator.js"></script>

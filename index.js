@@ -1,6 +1,6 @@
 (function() {
   'use strict';
-  angular.module('trainingProject', ['ui.router']);
+  angular.module('trainingProject', ['ui.router', 'ui.bootstrap']);
 
   angular.module('trainingProject').config(function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/');

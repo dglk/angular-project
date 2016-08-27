@@ -1,0 +1,27 @@
+{
+  "title": "Project",
+  "profile": {
+    "title": "Profile",
+    "userinfo": "User Information",
+    "username": "Username",
+    "age": "Age",
+    "date": "Date",
+    "preview": "Preview",
+    "submit": "Submit",
+    "update": "Update Profile",
+    "update-help": "You can update your profile settings using the fields below.",
+    "validation": {
+      "name-lowercase": "First letter must be capitalized",
+      "name-latin-only": "Username should include only Latin letters",
+      "name-too-short": "Username should be at least 3 characters long",
+      "age-not-integer": "Age should be a valid positive integer",
+      "age-not-in-range": "Age should be between 18 and 65",
+      "date-wrong-format": "Enter a date in a DD-MM-YYYY format"
+    }
+  },
+  "languages": {
+    "title": "Language",
+    "english": "English",
+    "russian": "Russian"
+  }
+}
